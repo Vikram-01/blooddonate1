@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Blood Donation</title>
+        <link rel="stylesheet" href="front.css">
+        
+    </head>
+    
+    <body>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+            var bloodbank = document.getElementById("bloodbank");
+
+            bloodbank.addEventListener("click", function() {
+            window.location.href = "bloodbanksignin.html"; });
+            var signin = document.getElementById("signin");
+
+            signin.addEventListener("click", function() {
+            window.location.href = "signin.html"; });});
+          
+          </script>
+        <div class="user">
+        <div class="banner">
+            <div class="navbar">
+                <img src="logogo.png" class="logo">
+                <ul>
+                    <li><b><a href="#">Home</a></b></li>
+                    <li><b><a href="blood inventory.html">Blood Inventory</a></b></li>
+                    <li><b><a href="bloodbankdonar.html">Donor</a></b></li>
+                    <li><b><a href="bloodbankreceiver.html">Receiver</a></b></li>
+                    <li><b><a href="donate.html">Donate</a></b></li>
+                    <li><b><a href="receive.html">Receive</a></b></li>
+                </ul>
+            </div>
+            <div class="content">
+                <h1>DONATE YOUR BLOOD</h1>
+                <p>START DONATING YOUR BLOOD TO SAVE LIVES</p>
+              
+                  <button type="button" id="bloodbank">Blood Bank Login</button>
+                  <button type="button" id="signin">User Login</button>
+             </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

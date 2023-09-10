@@ -1,0 +1,169 @@
+<html>
+    <head>
+        <title>Blood Inventory</title>
+        <link rel="stylesheet" href="inventory.css">
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    </head>
+<body>
+    <h2>Blood Inventory</h2>
+    <div class="card-container">
+        <h3 class="title">Inventory Database</h3>
+        <div class="card-wrapper">
+            <div class="blood-card light-red">
+                <div class="card-header">
+                <div class="count">
+                    <span class="title1">Total Donations</span>
+                    <span class="count1">20</span>
+                </div>
+                <i class="fa fa-heartbeat icon dark-red"  style='font-size:24px'></i>
+            </div>
+            <span class="bank-detail"></span>
+            </div>
+            <div class="blood-card light-purple">
+                <div class="card-header">
+                <div class="count">
+                    <span class="title1">Total Reciever</span>
+                    <span class="count1">20</span>
+                </div>
+                <i class="fa fa-podcast icon dark-purple"  style='font-size:24px'></i>
+            </div>
+            <span class="bank-detail"></span>
+            </div>
+            <div class="blood-card light-blue">
+                <div class="card-header">
+                <div class="count">
+                    <span class="title1">Total Units Collected</span>
+                    <span class="count1">20</span>
+                </div>
+                <i class="fa fa-database icon dark-blue"  style='font-size:24px'></i>
+            </div>
+            <span class="bank-detail"></span>
+            </div><div class="blood-card light-green">
+                <div class="card-header">
+                <div class="count">
+                    <span class="title1">Total User</span>
+                    <span class="count1">20</span>
+                </div>
+                <i class="fa fa-group icon dark-green"  style='font-size:24px'></i>
+            </div>
+            <span class="bank-detail"></span>
+            </div>
+        </div>
+        
+    </div>
+    <div class="maincontent">
+        <div class="head-wrap">
+            <div class="head-title">
+    <div class="info">
+       
+    <select name="stateCode" class="form-control" id="stateCode"><option value="-1">Select State</option>
+        <option value="35">Andaman &amp; Nicobar Islands</option>
+        <option value="28">Andhra Pradesh</option>
+        <option value="12">Arunachal Pradesh</option>
+        <option value="18">Assam</option>
+        <option value="10">Bihar</option>
+        <option value="94">Chandigarh</option>
+        <option value="22">Chhattisgarh</option>
+        <option value="26">Dadra &amp; Nagar Haveli</option>
+        <option value="25">Daman &amp; Diu</option>
+        <option value="97">Delhi</option>
+        <option value="30">Goa</option>
+        <option value="24">Gujarat</option>
+        <option value="96">Haryana</option>
+        <option value="92">Himachal Pradesh</option>
+        <option value="91">Jammu and Kashmir</option>
+        <option value="20">Jharkhand</option>
+        <option value="29">Karnataka</option>
+        <option value="32">Kerala</option>
+        <option value="37">Ladakh</option>
+        <option value="31">Lakshadweep</option>
+        <option value="23">Madhya Pradesh</option>
+        <option value="27">Maharashtra</option>
+        <option value="14">Manipur</option>
+        <option value="17">Meghalaya</option>
+        <option value="15">Mizoram</option>
+        <option value="13">Nagaland</option>
+        <option value="21">Odisha</option>
+        <option value="34">Puducherry</option>
+        <option value="93">Punjab</option>
+        <option value="98">Rajasthan</option>
+        <option value="11">Sikkim</option>
+        <option value="33">Tamil Nadu</option>
+        <option value="36">Telangana</option>
+        <option value="16">Tripura</option>
+        <option value="95">Uttarakhand</option>
+        <option value="99">Uttar Pradesh</option>
+        <option value="19">West Bengal</option></select>
+        <input type="text" placeholder="Location" class="location"/>
+        <select name="Blood Type"><option value="-1">Blood Type</option>
+            <option>B +ve</option>
+            <option>A +ve</option>
+            <option>O +ve</option>
+            <option>AB +ve</option>
+            <option>B -ve</option>
+            <option>A -ve</option>
+            <option>AB -ve</option>
+            <option>0 -ve</option></select>
+        <i class="fa fa-filter" style="font-size:24px"></i>
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="search">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="Search"/>
+</div>
+    </div>
+</div></div></div>
+
+<div class="table-wrap">
+    <h3 class="maintitle">
+        Data
+    </h3>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Blood Bank</th>
+                    <th>Blood Type</th>
+                    <th>Location</th>
+                    <th>State</th>
+                    <th>Action</th>
+                    
+                </tr>
+                <tbody>
+                    <tr>
+                        <td>Viveka N R</td>
+                        <td>Madurai Blood Bank</td>
+                        <td>B +ve</td>
+                        <td>Madurai</td>
+                        <td>Tamil Nadu</td>
+                        <td><button>Request</button></tr>
+                        
+                    </tr>
+                    <tr>
+                        <td>Hello</td>
+                        <td>VMS Blood Bank</td>
+                        <td>O +ve</td>
+                        <td>Chennai</td>
+                        <td>Tamil Nadu</td>
+                        <td><button>Request</button></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Hello</td>
+                        <td>VMS Blood Bank</td>
+                        <td>O +ve</td>
+                        <td>Chennai</td>
+                        <td>Tamil Nadu</td>
+                        <td><button>Request</button></td>
+                        
+                    </tr>
+                </tbody>
+                
+            </thead>
+           
+        </table>
+    </div>
+</div>
+</body>
+</html>

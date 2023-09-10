@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href='signin.css'>
+</head>
+<body>
+    <div class="container">
+        <div class="box signin">
+            <h2>Already Have an account</h2>
+            <button class="signinbtn">Sign In</button>
+        </div>
+        <div class="box signup">
+            <h2>Don't Have an account</h2>
+            <button class="signupbtn">Sign Up</button>
+        </div>
+        <div class="loginbox">
+            <div class="form signinform">
+                <form method="post" action="login.php">
+                    <h3>Sign In</h3>
+                    <input type="email" name="email" placeholder="Email" required />
+                    <input type="password" name="password" placeholder="Password" required />
+                    <input type="submit" value="Login">
+                    <a href="#" class="forgot">Forgot Password</a>
+                </form>
+            </div>
+            <div class="form signupform">
+                <form method="post" action="register.php">
+                    <h3>Sign Up</h3>
+                    <input type="text" name="name" placeholder="Name" />
+                    <input type="email" name="email" placeholder="Email" required />
+                    <input type="number" name="phone_number" placeholder="Phone Number" />
+                    <input type="password" name="password" placeholder="Password" required />
+                    <input type="password" name="cpassword" placeholder="Confirm Password" />
+                    <button id="otp">Get OTP</button>
+                    <input type="text" name="otp_value" placeholder="OTP" />
+                    <input type="submit" value="Register">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        let signinbtn = document.querySelector('.signinbtn');
+        let signupbtn = document.querySelector('.signupbtn');
+        let body = document.querySelector('body');
+        signupbtn.onclick = function () {
+            body.classList.add('slide');
+        };
+        signinbtn.onclick = function () {
+            body.classList.remove('slide');
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700,900">
+    <link rel="stylesheet" href="bloodbanklogin.css">
+</head>
+<body>
+    <div class="bank-container">
+        <form action="#">
+            <h1>Create Blood bank Account</h1>
+            <div class="side-by-side">
+                <div class="form-group">
+                    <label for="bloodBankName">Blood bank name</label>
+                    <input type="text" id="bloodBankName" placeholder="Blood bank name" />
+                </div>
+                <div class="form-group">
+                    <label for="stateCode">State</label>
+                    <select name="stateCode" class="form-control" id="stateCode">
+                        <option value="-1">Select State</option>
+                        <option value="35">Andaman &amp; Nicobar Islands</option>
+        <option value="28">Andhra Pradesh</option>
+        <option value="12">Arunachal Pradesh</option>
+        <option value="18">Assam</option>
+        <option value="10">Bihar</option>
+        <option value="94">Chandigarh</option>
+        <option value="22">Chhattisgarh</option>
+        <option value="26">Dadra &amp; Nagar Haveli</option>
+        <option value="25">Daman &amp; Diu</option>
+        <option value="97">Delhi</option>
+        <option value="30">Goa</option>
+        <option value="24">Gujarat</option>
+        <option value="96">Haryana</option>
+        <option value="92">Himachal Pradesh</option>
+        <option value="91">Jammu and Kashmir</option>
+        <option value="20">Jharkhand</option>
+        <option value="29">Karnataka</option>
+        <option value="32">Kerala</option>
+        <option value="37">Ladakh</option>
+        <option value="31">Lakshadweep</option>
+        <option value="23">Madhya Pradesh</option>
+        <option value="27">Maharashtra</option>
+        <option value="14">Manipur</option>
+        <option value="17">Meghalaya</option>
+        <option value="15">Mizoram</option>
+        <option value="13">Nagaland</option>
+        <option value="21">Odisha</option>
+        <option value="34">Puducherry</option>
+        <option value="93">Punjab</option>
+        <option value="98">Rajasthan</option>
+        <option value="11">Sikkim</option>
+        <option value="33">Tamil Nadu</option>
+        <option value="36">Telangana</option>
+        <option value="16">Tripura</option>
+        <option value="95">Uttarakhand</option>
+        <option value="99">Uttar Pradesh</option>
+        <option value="19">West Bengal</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" placeholder="Location" />
+                </div>
+                <div class="form-group">
+                    <label for="licenseNo">License No</label>
+                    <input type="text" id="licenseNo" placeholder="License No" />
+                </div>
+                <div class="form-group">
+                    <label for="hospType">Type</label>
+                    <select name="hospType" onchange="" class="form-control" id="hospType">
+                        <option value="-1">Select type</option>
+                       <option>Govt</option>
+                       <option>Private</option>
+                       <option>NGO</option>
+                    </select>
+                </div>
+            </div>
+            <div class="side-by-side">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email" />
+                </div>
+                <div class="form-group">
+                    <label for="contactNumber">Contact Number</label>
+                    <input type="number" id="contactNumber" placeholder="Contact Number" />
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Password" />
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" />
+                </div>
+                <div class="form-group">
+                    <label for="otp">OTP</label>
+                    <button id="otp">Get OTP</button>
+                </div>
+            </div>
+            <div class="side-by-side">
+                <div class="form-group">
+                    <label for="enterOtp">Enter OTP</label>
+                    <input type="text" id="enterOtp" placeholder="Enter OTP" />
+                </div>
+                <div class="form-group">
+                    <label for="file">Upload File</label>
+                    <input id="file" name="file" type="file" />
+                </div>
+            </div>
+            <button id="signup">Sign Up</button>
+            <label>Already have an account? </label><a href="bloodbanksignin.html">Login Here</a>
+        </form>
+    </div>
+</body>
+</html>

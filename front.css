@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+*{
+    margin:0;
+    padding:0;
+	font-family: 'Poppins', sans-serif;
+}
+.banner{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgb(219, 213, 213,0),rgba(219, 213, 213, 0)),url(blood.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.navbar{
+    width: 85%;
+    margin:auto;
+    padding: 0 0;
+    display:flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    margin: 0%;
+    width:200px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display:inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:#991ab6;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    margin-left: 18%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+    color: #B31B1B;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    color: #cd5c5c;
+}
+button{
+    cursor: pointer;
+	padding: 10px 20px;
+	background: #f43648;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	border: none;
+	outline: none;
+    font-weight: bold;
+}
+button:hover{
+    border: none;
+}

@@ -1,0 +1,35 @@
+name: PHP SAST
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  sast:
+    name: Run SAST on PHP Code
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1' # Specify your PHP version
+
+      - name: Install Dependencies
+        run: |
+          composer install
+
+      - name: Install PHP CodeSniffer
+        run: |
+          composer require --dev squizlabs/php_codesniffer
+
+      - name: Run PHP CodeSniffer
+        run: |
+          vendor/bin/phpcs --standard=PSR12 src/
